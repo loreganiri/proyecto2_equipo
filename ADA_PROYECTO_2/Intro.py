@@ -7,11 +7,10 @@ print("2.- Listar peliculas")
 print("3.- Eliminar catalogo de peliculas")
 print("4.- Salir")
 
-
 while True:
    print("Dame un numero entre 1 y 4: ")
    choose=int(input())
-   if choose not in range(1,4):
+   if choose not in range(1,5):
        print("Opcion invalida, intenta de nuevo")
    else:
         if choose == 1:
@@ -20,33 +19,40 @@ while True:
             try:
                 with open('Catalogo.txt') as f:     
                     print("El archivo existe")
-                    import Mostrar_pelis_existentes
-                    from Mostrar_pelis_existentes import *  
+                    import AgregarPeli
+                    from AgregarPeli import *  
+
             except FileNotFoundError:
                 print("El archivo aun no existe")
                 import Catalogo_no_existe
                 from Catalogo_no_existe import *
             
         elif choose == 2:
-            print("Escogio la 2, todavia no hace nada")   
+            try: 
+               with open('Catalogo.txt') as f:      
+                print("Mostrar peliculas existentes en el catalogo")
+                import Mostrar_pelis_existentes
+                from Mostrar_pelis_existentes import * 
+            except FileNotFoundError:
+                print("El archivo no existe, por favor registra una pelicula primero.")  
         elif choose == 3:
-            print("Escogio la 3, todavia no hace nada")
-            import os
-            file = 'archivo3.txt'
-            if os.path.exists(file): 
-            os.remove(file)
-            print("Este archivo fue eliminado con exito")
-            else:
-            print("No se encontro tal archivo")
+                print("Eliminacion del Catalogo en proceso")
+                import os
+                file = 'Catalogo.txt'
+                if os.path.exists(file): 
+                    os.remove(file)
+                    print("Este archivo fue eliminado con exito")
+                else:
+                    print("No se encontro tal archivo")
         else:
-            print("Escogio la 4, va a borrar, peliculas, todavia no hace nada")
-            import os
-            file = 'Catalogo.txt'
-            if os.path.exists(file): 
-            os.remove(file)
-            print("Este archivo fue eliminado con exito")
-            else:
-            print("No se encontro tal archivo")
+            if choose ==4:
+                print("Muchas gracias por visitarnos! Adios!")
+                exit()
+
+                
+        
+
+   
 
 
 
