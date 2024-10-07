@@ -4,15 +4,15 @@ class Pelicula:
     tipo = 'Cine'                                               # Atributo de clase
     
     def __init__(self, titulo, anio, genero, director):
-        self.__titulo   = __titulo                               # Atributo de instancia
-        self.__anio     = __anio
+        self.__titulo   = titulo                               # Atributo de instancia
+        self.__anio     = anio
         self.genero     = genero
         self.director   = director
 
 # Método para mostrar información
     def mostrar_info(self):
-        print(f'Nombre de la película: {self.__titulo}, el género es {self.genero}.')
-        print(f'El director fue {self.director} en el año {self.__anio}')  # Imprime la información
+        print(f'Nombre de la película es {self.__titulo} y el género es {self.genero}.')
+        print(f'El director de {self.__titulo} es {self.director} y se estrenó en el año {self.__anio}\n')  # Imprime la información
 
     # Getter con @property
     @property
@@ -20,10 +20,7 @@ class Pelicula:
         return self.__titulo
 # El decorador @property convierte el método titulo en un getter,
 #  permitiendo acceder al atributo __titulo de manera controlada.
-    @property
-    def anio(self):
-        return self.__anio
-    
+
     # Setter con @nombre.setter
     @titulo.setter
     def titulo(self, nuevo_titulo):
@@ -35,6 +32,10 @@ class Pelicula:
 #  permitiendo modificar su valor solo si nuevo_titulo es una cadena de texto.
 #  Si no lo es, se lanza un ValueError.
 
+    @property
+    def anio(self):
+        return self.__anio
+    
     @anio.setter
     def anio(self, corregir_anio):
         if isinstance(corregir_anio, int):
@@ -48,6 +49,8 @@ print(pelicula.titulo)  # Llama al getter sin usar paréntesis
 pelicula.titulo = 'Matrix'  # Llama al setter como una asignación directa
 print(pelicula.titulo)  # Accede nuevamente al atributo usando getter}
 
-pelicula = Pelicula('Una familia normal', 2023, 'Drama', 'Per Hanefjord')
+pelicula_2 = Pelicula('Una familia normal', 2003, 'Drama', 'Per Hanefjord') 
+# La pelicula_2 tiene el año erroneo, debe ser 2023
+pelicula_2.mostrar_info() # Mostrar la información
 
-mostrar_info.pelicula
+# ¿Cómo se accede al año de película para cambiar el año?
