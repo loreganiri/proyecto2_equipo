@@ -20,6 +20,8 @@ class Pelicula:
         return self.__titulo
 # El decorador @property convierte el método titulo en un getter,
 #  permitiendo acceder al atributo __titulo de manera controlada.
+    @property
+    def director(self):
     
     # Setter con @nombre.setter
     @titulo.setter
@@ -36,6 +38,8 @@ class Pelicula:
 pelicula = Pelicula('Matriz', 1999, 'Ciencia Ficción', 'Lana Wachowski')
 print(pelicula.titulo)  # Llama al getter sin usar paréntesis
 pelicula.titulo = 'Matrix'  # Llama al setter como una asignación directa
-print(pelicula.titulo)  # Accede nuevamente al atributo usando getter
+print(pelicula.titulo)  # Accede nuevamente al atributo usando getter}
 
+pelicula = Pelicula('Una familia normal', 2023, 'Drama', 'Per Hanefjord'))
 
+mostrar_info.pelicula
