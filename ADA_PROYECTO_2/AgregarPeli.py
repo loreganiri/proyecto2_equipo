@@ -2,11 +2,11 @@
 
 while True:
     print("Escribe el nombre de la pelicula a registrar")
-    Nombre_Peli = input()
+    agregar_pelicula = input()
     with open ("Catalogo.txt", 'a') as archivo:
-      archivo.write(Nombre_Peli)
+      archivo.write(agregar_pelicula)
       archivo.write("\n")
-      print(Nombre_Peli)
+      print(agregar_pelicula)
       print("¿Deseas agregar otra película? SI/NO")
       otra = input()
     
