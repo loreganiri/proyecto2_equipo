@@ -14,3 +14,5 @@ Los otros
 Nueva película
 La doble
 Nueva película
+Karina
+<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
