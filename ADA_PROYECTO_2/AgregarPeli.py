@@ -6,7 +6,7 @@ while True:
     with open ("Catalogo.txt", 'a') as archivo:
       archivo.write(agregar_pelicula)
       archivo.write("\n")
-      print(agregar_pelicula)
+     # print(agregar_pelicula)
       print("¿Deseas agregar otra película? SI/NO")
       otra = input()
     
