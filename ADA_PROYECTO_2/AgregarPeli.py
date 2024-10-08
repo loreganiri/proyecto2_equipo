@@ -7,7 +7,7 @@ while True:
       archivo.write(Nombre_Peli)
       archivo.write("\n")
       print(Nombre_Peli)
-      print("¿Deseas agregar otra pelicula? SI/NO")
+      print("¿Deseas agregar otra película? SI/NO")
       otra = input()
     
     if otra.lower()in ["si"]:
@@ -18,5 +18,5 @@ while True:
        print("Ok, gracias, adiosito!")
        break
     else:
-       print("Opcion invalida, por favor escribe SI ó NO")
+       print("Opción inválida. Por favor escribe SI o NO")
        break

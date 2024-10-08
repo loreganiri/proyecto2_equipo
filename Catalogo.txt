@@ -1,0 +1,8 @@
+Matriz
+Matrix
+Nueva Película
+Nueva Película
+La doble
+<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
+Titanic
+<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>

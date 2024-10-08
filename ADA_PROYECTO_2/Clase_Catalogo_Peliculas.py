@@ -1,7 +1,15 @@
 # Crear una clase catálogo que gestione los diferentes catálogos de películas
-
-class Catalogo_Peliculas():                                     # El nombre de el catálogo de películas
+import AgregarPeli as agregar
+class CatalogoPeliculas():                                 # El nombre de el catálogo de películas
     def __init__(self, nombre_catalogo, ruta_catalogo):     # La ruta del archivo donde se va a guardar el catálogo
         self.nombre_catalogo = nombre_catalogo
         self.ruta_catalogo   = ruta_catalogo
-def 
+
+    def agregar_pelicula(self, pelicula):  # Escribir películas en el archivo
+        with open(self.ruta_catalogo, 'a') as archivo:
+            archivo.write(f"{pelicula}\n")                    
+        return 'La película se agregó en el catálogo'
+
+# Ejemplo de uso
+catalogo = CatalogoPeliculas("Mi Catálogo", "Catalogo.txt")
+print(catalogo.agregar_pelicula(agregar))
