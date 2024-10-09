@@ -10,7 +10,7 @@ while True:
 
       print("¿Deseas agregar otra película? SI/NO")
 
-      otra = input().strip().lower()                # .strip elimina espacios en blando
+      otra = input().strip().lower()                # .strip elimina espacios en blanco
     
     if otra in ['si', 'sí']:                        # consideré que el usuario puede no escribir el acento
       #import AgregarPeli

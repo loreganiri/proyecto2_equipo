@@ -1,18 +1,18 @@
-
-archivo = open('Catalogo.txt', 'r')
+# Abril el archivo 'Catalogo.txt' en modo lectura archivo = open('Catalogo.txt', 'r')
 with open ("Catalogo.txt", 'r') as archivo:
-   linea = archivo.readline()
-   while linea:
-       print(linea.strip())
-       linea = archivo.readline()
-  
+      sentencia = archivo.readline()                  # Leer la primera línea del archivo
 
-print("¿Deseas agregar otra pelicula?")
+      while sentencia:                                # Continua leyendo y procesando líneas hasta el final del archivo
+       print(linea.strip())                           # Imprime la línea sin espacios en blanco al principio o al final
+       sentencia = archivo.readline()                 # Lee la siguiente línea de archivo
+  
+print("¿Deseas agregar otra película?")               # Preguntar al usuario si desea agregar otra película
 otra = input()
-if otra.lower()in ["si"]:
-      import AgregarPeli
-      from AgregarPeli import *
+
+if otra.lower()in ["si","sí"]:                         # Verifica la respuesta del usuario
+#      import AgregarPeli                               No es necesario mandarlo llamar dos veces
+      from AgregarPeli import *                        # Importa el módulo y su contenido
 else: 
-      otra.lower() in ["no"]
-      print("Ok, gracias, adiosito!")
+#      otra.lower() in ["no"]                           La condición no es necesaria
+      print("¡Ok! ¡Gracias, adiosito!")                 # Imprime mensaje de despedida
       
