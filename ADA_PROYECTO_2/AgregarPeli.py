@@ -17,8 +17,14 @@ while True:
       #from AgregarPeli import *                     # No es necesario importar acá el módulo
            continue
     elif otra in ["no"]:
-       print("¡Ok! ¡Gracias, adiosito!")
+       print(f'¿Quieres ver la lista de películas? SI/NO\n')
+       ver = input().strip().lower()                 # Elimina espacios y pone la entrada en minúsculas
+       if ver in['si', 'sí']: 
+          with open("Catalogo.txt", 'r') as archivo:
+                peliculas = archivo.read()
+                print(f'Las películas existentes en el catálogo son:\n{peliculas}')        
        break
+    
     else:
-       print("Opción inválida. Por favor escribe SI o NO")
+       print("Opción inválida. Por favor escribe SI/NO")
        break
