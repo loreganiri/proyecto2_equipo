@@ -13,8 +13,9 @@ class CatalogoPeliculas():                                 # El nombre de el cat
         #resultado = AgregarPeli.agregar_pelicula(self.ruta_catalogo, pelicula)
         #return resultado
 
+        
+
 # Ejemplo de uso
 catalogo = CatalogoPeliculas("Mi Catálogo", "Catalogo.txt")
-print(catalogo.agregar_pelicula('Nueva película'))
-
+print(catalogo.agregar_pelicula('Registro de película nueva'))
 

@@ -1,19 +1,22 @@
 
 while True:
-    print("Escribe el título de la película que vas a registrar")
+    print("Escribe el título de la película que vas a registrar: ")
     agregar_pelicula = input()
+
     with open ("Catalogo.txt", 'a') as archivo:
-      archivo.write(agregar_pelicula)
-      archivo.write("\n")
-     # print(agregar_pelicula)
+      archivo.write(agregar_pelicula + "\n")        # Para tener menos líneas solo agregué el +
+
+      print(f'Película {agregar_pelicula} registrada.')
+
       print("¿Deseas agregar otra película? SI/NO")
-      otra = input()
+
+      otra = input().strip().lower()                # .strip elimina espacios en blando
     
-    if otra.lower()in ["sí"]:
-      import AgregarPeli
-      from AgregarPeli import *
-           
-    elif otra.lower() in ["no"]:
+    if otra in ['si', 'sí']:                        # consideré que el usuario puede no escribir el acento
+      #import AgregarPeli
+      #from AgregarPeli import *                     # No es necesario importar acá el módulo
+           continue
+    elif otra in ["no"]:
        print("¡Ok! ¡Gracias, adiosito!")
        break
     else:

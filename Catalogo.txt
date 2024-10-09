@@ -16,3 +16,9 @@ La doble
 Nueva película
 Karina
 <module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
+Matrix
+Nueva película
+Una película palomera
+Registro de película nueva
+Matriz
+Registro de película nueva
