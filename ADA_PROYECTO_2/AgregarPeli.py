@@ -6,7 +6,7 @@ while True:
     with open ("Catalogo.txt", 'a') as archivo:
       archivo.write(agregar_pelicula + "\n")        # Para tener menos líneas solo agregué el +
 
-      print(f'Película {agregar_pelicula} registrada.')
+      print(f'Película {agregar_pelicula} fue registrada.')
 
       print("¿Deseas agregar otra película? SI/NO")
 

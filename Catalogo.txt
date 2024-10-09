@@ -1,24 +1,4 @@
-Matriz
-Matrix
-Nueva Película
-Nueva Película
-La doble
-<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
-Titanic
-<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
-Amar te duele
-Vida de perros
-X Man
-Todo por amor
-Los otros
-Nueva película
-La doble
-Nueva película
-Karina
-<module 'AgregarPeli' from '/Users/kgb/Desktop/ADA_TRABAJOS/proyecto2_equipo/ADA_PROYECTO_2/AgregarPeli.py'>
-Matrix
-Nueva película
-Una película palomera
-Registro de película nueva
-Matriz
-Registro de película nueva
+El exor
+El sexto día
+Apocalipsis Now
+Hoy
