@@ -1,7 +1,6 @@
 
-
 while True:
-    print("Escribe el nombre de la pelicula a registrar")
+    print("Escribe el título de la película que vas a registrar")
     agregar_pelicula = input()
     with open ("Catalogo.txt", 'a') as archivo:
       archivo.write(agregar_pelicula)
@@ -10,12 +9,12 @@ while True:
       print("¿Deseas agregar otra película? SI/NO")
       otra = input()
     
-    if otra.lower()in ["si"]:
+    if otra.lower()in ["sí"]:
       import AgregarPeli
       from AgregarPeli import *
            
     elif otra.lower() in ["no"]:
-       print("Ok, gracias, adiosito!")
+       print("¡Ok! ¡Gracias, adiosito!")
        break
     else:
        print("Opción inválida. Por favor escribe SI o NO")
