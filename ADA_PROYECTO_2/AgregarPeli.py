@@ -1,30 +1,47 @@
+# Agregar en el catalogó con los atributos título, dirección, género, año
 
 while True:
+    
+  # Solicitar el título a agregar al usuario
     print("Escribe el título de la película que vas a registrar: ")
     agregar_pelicula = input()
 
-    with open ("Catalogo.txt", 'a') as archivo:
-      archivo.write(agregar_pelicula + "\n")        # Para tener menos líneas solo agregué el +
+  # Solicitar el director de la película al usuario
+    print("Escribe el director de la película que vas a registrar: ")
+    agregar_director = input()
 
-      print(f'Película {agregar_pelicula} fue registrada.')
+  # Solicitar el género de la película al usuario
+    print("Escribe el género de la película que vas a registrar: ")
+    agregar_genero = input()
 
-      print("¿Deseas agregar otra película? SI/NO")
+  # Solicitar el año de la película al usuario
+    print("Escribe el año de la película que vas a registrar: ")
+    agregar_anio = input()
 
-      otra = input().strip().lower()                # .strip elimina espacios en blanco
+
+  # Abrir el archivo 'Catalogo.txt' en modo de adición y escribir los datos de la película
+    with open("Catalogo.txt", 'a') as archivo:
+        archivo.write(f"{titulo}, {director}, {genero}, {anio}\n")
+        print(f'Película {agregar_pelicula} fue registrada.')
+
+  # Preguntar al usuario si quiere agregar otra película    
+        print("¿Deseas agregar otra película? SI/NO")
+        otra = input().strip().lower()                          # .strip elimina espacios en blanco
     
-    if otra in ['si', 'sí']:                        # consideré que el usuario puede no escribir el acento
+    if otra in ['si', 'sí']:                                    # consideré que el usuario puede no escribir el acento
       #import AgregarPeli
-      #from AgregarPeli import *                     # No es necesario importar acá el módulo
+      #from AgregarPeli import *                                # No es necesario importar acá el módulo
            continue
     elif otra in ["no"]:
        print(f'¿Quieres ver la lista de películas? SI/NO\n')
        ver = input().strip().lower()                 # Elimina espacios y pone la entrada en minúsculas
+       
        if ver in['si', 'sí']: 
           with open("Catalogo.txt", 'r') as archivo:
                 peliculas = archivo.read()
                 print(f'Las películas existentes en el catálogo son:\n{peliculas}')        
        break
-    
+  
     else:
        print("Opción inválida. Por favor escribe SI/NO")
        break
