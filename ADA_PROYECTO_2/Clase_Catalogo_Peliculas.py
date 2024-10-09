@@ -1,4 +1,6 @@
 # Crear una clase catálogo que gestione los diferentes catálogos de películas
+# Este archivo tiene la lógica del menú, estoy mandando llamar los módulos que programó Lore
+
 import AgregarPeli
 import Mostrar_pelis_existentes
 
